@@ -20,6 +20,7 @@ import java.io.IOException
 *创建时间:2021/1/16 5:34 PM
 *描述: TODO
 */
+//数据类
 data class UsersPreferences(
     val name: String,
     val age: Int
@@ -28,8 +29,8 @@ data class UsersPreferences(
 private val dataStoreS: DataStore<Preferences> = mContext
     .createDataStore(name = "user")
 
+//仓库类 管理
 class UserPreferencesRepository {
-
 
     private object PreferencesKeys {
         val SHOW_NAME = preferencesKey<String>("name")
@@ -52,7 +53,7 @@ class UserPreferencesRepository {
             }
 
 
-    suspend fun updateShowCompleted(name: String,age:Int) {
+    suspend fun updateShowCompleted(name: String, age: Int) {
         dataStoreS.edit { preferences ->
             preferences[PreferencesKeys.SHOW_NAME] = name
             preferences[PreferencesKeys.SHOW_AGE] = age

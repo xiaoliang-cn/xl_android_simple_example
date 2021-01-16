@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.xiaoliang.xlandroidsimpleexample.datastore.UserPreferencesRepository
+import com.xiaoliang.xlandroidsimpleexample.nav.NavigationActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 
@@ -13,6 +14,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         storeExample()
+        navigationExample()
+    }
+
+    private fun navigationExample() {
+        navigation_example.setOnClickListener {
+            val intent = Intent(this, NavigationActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 
     private fun storeExample() {
@@ -20,5 +30,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DataStoreSimpleExample::class.java)
             startActivity(intent)
         }
+
     }
 }

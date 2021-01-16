@@ -1,7 +1,12 @@
 package com.xiaoliang.xlandroidsimpleexample.koin
 
+import com.google.android.material.navigation.NavigationView
+import com.xiaoliang.xlandroidsimpleexample.data.DataRepository
 import com.xiaoliang.xlandroidsimpleexample.datastore.UserPreferencesRepository
 import com.xiaoliang.xlandroidsimpleexample.datastore.UsersPreferences
+import com.xiaoliang.xlandroidsimpleexample.nav.NavigationViewModel
+import org.koin.androidx.experimental.dsl.viewModel
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 /*
@@ -12,7 +17,11 @@ import org.koin.dsl.module
 *描述: TODO
 */
 
+//注入框架
 val appModule = module {
     single { UserPreferencesRepository() }
-
+    single { DataRepository() }
+    viewModel {
+        NavigationViewModel(get())
+    }
 }
