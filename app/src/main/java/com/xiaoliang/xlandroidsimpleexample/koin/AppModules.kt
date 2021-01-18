@@ -1,11 +1,10 @@
 package com.xiaoliang.xlandroidsimpleexample.koin
 
-import com.google.android.material.navigation.NavigationView
 import com.xiaoliang.xlandroidsimpleexample.data.DataRepository
+import com.xiaoliang.xlandroidsimpleexample.databinding.DataBinDingViewModel
 import com.xiaoliang.xlandroidsimpleexample.datastore.UserPreferencesRepository
-import com.xiaoliang.xlandroidsimpleexample.datastore.UsersPreferences
-import com.xiaoliang.xlandroidsimpleexample.nav.NavigationViewModel
-import org.koin.androidx.experimental.dsl.viewModel
+import com.xiaoliang.xlandroidsimpleexample.lifecycle.LifecycleOwnerTest
+import com.xiaoliang.xlandroidsimpleexample.navigation.NavigationViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -21,7 +20,11 @@ import org.koin.dsl.module
 val appModule = module {
     single { UserPreferencesRepository() }
     single { DataRepository() }
+    single { LifecycleOwnerTest() }
     viewModel {
         NavigationViewModel(get())
+    }
+    viewModel {
+        DataBinDingViewModel()
     }
 }

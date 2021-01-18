@@ -1,4 +1,4 @@
-package com.xiaoliang.xlandroidsimpleexample.nav
+package com.xiaoliang.xlandroidsimpleexample.navigation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,11 +9,10 @@ class NavigationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
-        val navController = Navigation.findNavController(this, R.id.navigationFragment)
-        navController.addOnDestinationChangedListener { controller, destination, arguments ->
-            //监听导航连接
-
-        }
+//        navController.addOnDestinationChangedListener { controller, destination, arguments ->
+//            //监听导航连接
+//
+//        }
         //NavigationUI 支持以下顶部应用栏类型：
         //Toolbar
         //CollapsingToolbarLayout

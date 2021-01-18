@@ -1,4 +1,4 @@
-package com.xiaoliang.xlandroidsimpleexample.nav
+package com.xiaoliang.xlandroidsimpleexample.navigation
 
 import androidx.lifecycle.ViewModel
 import com.xiaoliang.xlandroidsimpleexample.data.DataRepository

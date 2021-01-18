@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigationFragment"
-        android:name="com.xiaoliang.xlandroidsimpleexample.nav.NavigationFragment"
+        android:name="com.xiaoliang.xlandroidsimpleexample.navigation.NavigationFragment"
         android:label="navigation_fragment"
         tools:layout="@layout/navigation_fragment" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation2Fragment"
-        android:name="com.xiaoliang.xlandroidsimpleexample.nav.Navigation2Fragment"
+        android:name="com.xiaoliang.xlandroidsimpleexample.navigation.Navigation2Fragment"
         android:label="fragment_navigation2"
         tools:layout="@layout/fragment_navigation2" />
 </navigation>

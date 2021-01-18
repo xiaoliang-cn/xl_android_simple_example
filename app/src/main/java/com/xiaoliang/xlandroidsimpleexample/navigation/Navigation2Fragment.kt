@@ -1,4 +1,4 @@
-package com.xiaoliang.xlandroidsimpleexample.nav
+package com.xiaoliang.xlandroidsimpleexample.navigation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

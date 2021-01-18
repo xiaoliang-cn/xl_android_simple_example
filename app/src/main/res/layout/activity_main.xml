@@ -22,4 +22,19 @@
         android:text="navigation_example"
         />
 
+    <Button
+        android:id="@+id/dataBinDing_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dataBinDing_example"
+        />
+
+
+    <Button
+        android:id="@+id/lifecycleOwner_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lifecycleOwner_example"
+        />
+
 </LinearLayout>

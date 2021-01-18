@@ -1,6 +1,5 @@
-package com.xiaoliang.xlandroidsimpleexample.nav
+package com.xiaoliang.xlandroidsimpleexample.navigation
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
