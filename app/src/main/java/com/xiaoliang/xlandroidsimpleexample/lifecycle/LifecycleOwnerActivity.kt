@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.ProcessLifecycleOwner
 import com.xiaoliang.xlandroidsimpleexample.R
 import com.xiaoliang.xlandroidsimpleexample.databinding.ActivityLifecycleOwnerBinding
 import org.koin.android.ext.android.inject
@@ -22,6 +23,8 @@ class LifecycleOwnerActivity : AppCompatActivity() {
         //如果不执行addObserver的话将无法进行绑定
         //lifecycleOwnerTest必须继承LifecycleObs
         lifecycle.addObserver(lifecycleOwnerTest)
+        //应用切换前后台调用
+//        ProcessLifecycleOwner.get().lifecycle.addObserver(lifecycleOwnerTest)
         DataBinDingLView.name = "LifecycleOwnerTest"
         lifecycleOwnerTest.helloLifecycle();
     }

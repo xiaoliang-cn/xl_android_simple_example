@@ -2,10 +2,7 @@ package com.xiaoliang.xlandroidsimpleexample.lifecycle
 
 import android.util.Log
 import android.widget.Toast
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.OnLifecycleEvent
+import androidx.lifecycle.*
 import com.xiaoliang.xlandroidsimpleexample.mContext
 
 /*
@@ -37,5 +34,21 @@ class LifecycleOwnerTest : LifecycleObserver {
     fun onDestroy() {
         Log.e("LifecycleOwnerTest", "我被销毁了")
         Toast.makeText(mContext, "hello,我被销毁了", Toast.LENGTH_LONG).show()
+    }
+
+
+    //进入后台
+    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
+    private fun onAppBackground() {
+        // 应用进入后台
+        Log.e("LifecycleOwnerTest", "LifecycleChecker onAppBackground ON_STOP");
+    }
+
+    //进入前台
+    @OnLifecycleEvent(Lifecycle.Event.ON_START)
+    private fun onAppForeground() {
+        // 应用进入前台
+        Log.e("LifecycleOwnerTest", "LifecycleChecker onAppForeground ON_START");
+
     }
 }
