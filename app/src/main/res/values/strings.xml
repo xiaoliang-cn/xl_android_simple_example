@@ -9,4 +9,7 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_lifecycle_owner">LifecycleOwnerActivity</string>
+    <string name="language">国语</string>
+    <string name="unknown">找不到</string>
+    <string name="loading">加载中</string>
 </resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xiaoliang.xlandroidsimpleexample" >
-
+    package="com.xiaoliang.xlandroidsimpleexample">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -12,16 +11,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat" >
-
-
-
-        <activity
-            android:name=".lifecycle.LifecycleOwnerActivity"/>
+        android:theme="@style/Theme.AppCompat">
+        <activity android:name="com.xiaoliang.xlandroidsimpleexample.paging.PagingSimpleExampleActivity"></activity>
+        <activity android:name=".lifecycle.LifecycleOwnerActivity" />
         <activity android:name=".databinding.DataBinDingActivity" />
         <activity android:name=".navigation.NavigationActivity" />
         <activity android:name=".DataStoreSimpleExample" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

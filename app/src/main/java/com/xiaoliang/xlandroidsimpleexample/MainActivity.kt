@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.xiaoliang.xlandroidsimpleexample.databinding.DataBinDingActivity
 import com.xiaoliang.xlandroidsimpleexample.lifecycle.LifecycleOwnerActivity
-import com.xiaoliang.xlandroidsimpleexample.lifecycle.LifecycleOwnerTest
 import com.xiaoliang.xlandroidsimpleexample.navigation.NavigationActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import com.xiaoliang.xlandroidsimpleexample.paging.PagingSimpleExampleActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,15 +23,24 @@ class MainActivity : AppCompatActivity() {
 
         //lifecycleOwner
         lifecycleOwnerExample()
+
+        //com.xiaoliang.xlandroidsimpleexample.paging example
+        pagingExample()
+    }
+
+    private fun pagingExample() {
+        pagingExample.setOnClickListener {
+            val intent = Intent(this, PagingSimpleExampleActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun lifecycleOwnerExample() {
         lifecycleOwner_example.setOnClickListener {
             val intent = Intent(this, LifecycleOwnerActivity::class.java)
             startActivity(intent)
-
         }
-
     }
 
     private fun databindingExample() {
