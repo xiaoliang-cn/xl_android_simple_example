@@ -26,6 +26,15 @@ class MainActivity : AppCompatActivity() {
 
         //com.xiaoliang.xlandroidsimpleexample.paging example
         pagingExample()
+
+        //联系人滑动效果
+        contactsScroll()
+    }
+
+    private fun contactsScroll() {
+//        contacts_scroll.setOnClickListener {
+//            val intent = Intent(this,MainActivity::class.java)
+//        }
     }
 
     private fun pagingExample() {

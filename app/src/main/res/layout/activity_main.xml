@@ -43,6 +43,12 @@
         android:layout_height="wrap_content"
         android:text="pagingExample"
         />
+    <Button
+        android:id="@+id/contacts_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系人滑动"
+        />
 
 
 </LinearLayout>

@@ -1,2 +1,4 @@
+include ':scroll'
+include ':sample'
 include ':app'
 rootProject.name = "XLAndroidSimpleExample"
