@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name="com.xiaoliang.xlandroidsimpleexample.paging.PagingSimpleExampleActivity"></activity>
+        <activity android:name=".animation.AnimationMainActivity"></activity>
+        <activity android:name=".springanimation.SpringAnimationActivity" />
+        <activity android:name=".paging.PagingSimpleExampleActivity" />
         <activity android:name=".lifecycle.LifecycleOwnerActivity" />
         <activity android:name=".databinding.DataBinDingActivity" />
         <activity android:name=".navigation.NavigationActivity" />

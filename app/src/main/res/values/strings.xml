@@ -12,4 +12,16 @@
     <string name="language">国语</string>
     <string name="unknown">找不到</string>
     <string name="loading">加载中</string>
+
+
+    <string name="content">在本例中，captureStartValues() 和 captureEndValues() 函数都会调用 captureValues() 以检索和存储值。captureValues() 检索的视图属性是相同的，但在起始场景和结束场景中具有不同的值。该框架会为视图的起始状态和结束状态维护单独的 Map 实例。
+
+创建自定义动画程序
+如需为视图在起始场景中的状态和结束场景中的状态之间的变化添加动画效果，请通过替换 createAnimator() 函数来提供动画程序。当框架调用此函数时，它会传入场景根视图和包含您捕获的起始值和结束值的 TransitionValues 对象。
+
+框架调用 createAnimator() 函数的次数取决于起始场景和结束场景之间发生的变化。例如，假设将淡出/淡入动画作为自定义过渡实现。如果起始场景具有五个目标，其中两个目标从结束场景中移除，而结束场景具有起始场景中的三个目标以及一个新目标，框架将会调用 createAnimator() 六次：其中三次调用为驻留在两个场景对象中的目标的淡出/淡入添加动画效果；另外两次调用为从结束场景中移除的目标的淡出添加动画效果；还有一次调用为结束场景中新目标的淡入添加动画效果。
+
+对于同时存在于起始场景和结束场景中的目标视图，该框架会为 startValues 和 endValues 参数提供 TransitionValues 对象。对于仅存在于起始场景或结束场景中的目标视图，该框架会为相应的参数提供 TransitionValues 对象，并为其他参数提供 null。
+
+如需在创建自定义过渡时实现 createAnimator(ViewGroup, TransitionValues, TransitionValues) 函数，请使用您捕获的视图属性值创建 Animator 对象并将其返回到框架。如需查看示例实现，请参阅 CustomTransition 示例中的 ChangeColor 类。如需详细了解属性动画程序，请参阅属性动画。</string>
 </resources>

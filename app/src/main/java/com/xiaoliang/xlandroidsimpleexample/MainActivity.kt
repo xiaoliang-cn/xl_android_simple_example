@@ -8,6 +8,7 @@ import com.xiaoliang.xlandroidsimpleexample.lifecycle.LifecycleOwnerActivity
 import com.xiaoliang.xlandroidsimpleexample.navigation.NavigationActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import com.xiaoliang.xlandroidsimpleexample.paging.PagingSimpleExampleActivity
+import com.xiaoliang.xlandroidsimpleexample.springanimation.SpringAnimationActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,14 +29,19 @@ class MainActivity : AppCompatActivity() {
         pagingExample()
 
         //联系人滑动效果
-        contactsScroll()
+        //model 例子 单独运行
+
+        //弹簧动画效果
+        springAnimation()
     }
 
-    private fun contactsScroll() {
-//        contacts_scroll.setOnClickListener {
-//            val intent = Intent(this,MainActivity::class.java)
-//        }
+    private fun springAnimation() {
+        contacts_scroll.setOnClickListener {
+            val intent = Intent(this, SpringAnimationActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 
     private fun pagingExample() {
         pagingExample.setOnClickListener {

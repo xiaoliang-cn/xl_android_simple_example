@@ -129,4 +129,8 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //添加弹簧动画
+    implementation 'androidx.dynamicanimation:dynamicanimation:1.0.0'
+
 }

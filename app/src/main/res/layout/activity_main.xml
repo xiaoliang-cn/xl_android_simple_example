@@ -1,54 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFB6C1"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
 
-    <Button
-        android:id="@+id/data_store_example"
-        android:layout_width="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DataStore_Example"
-    />
-
-    <Button
-        android:id="@+id/navigation_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="navigation_example"
-        />
-
-    <Button
-        android:id="@+id/dataBinDing_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="dataBinDing_example"
-        />
+        android:orientation="vertical">
 
 
-    <Button
-        android:id="@+id/lifecycleOwner_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="lifecycleOwner_example"
-        />
+        <Button
+            android:id="@+id/data_store_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/buttonMr"
+            android:background="@android:color/holo_blue_dark"
+            android:text="DataStore_Example" />
 
-    <Button
-        android:id="@+id/pagingExample"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="pagingExample"
-        />
-    <Button
-        android:id="@+id/contacts_scroll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="联系人滑动"
-        />
+        <Button
+            android:id="@+id/navigation_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/buttonMr"
+            android:background="@android:color/holo_blue_dark"
+            android:text="navigation_example" />
+
+        <Button
+            android:id="@+id/dataBinDing_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/buttonMr"
+            android:background="@android:color/holo_blue_dark"
+            android:text="dataBinDing_example" />
 
 
-</LinearLayout>
+        <Button
+            android:id="@+id/lifecycleOwner_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/buttonMr"
+            android:background="@android:color/holo_blue_dark"
+            android:text="lifecycleOwner_example" />
+
+        <Button
+            android:id="@+id/pagingExample"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/buttonMr"
+            android:background="@android:color/holo_blue_dark"
+            android:text="pagingExample" />
+
+        <Button
+            android:id="@+id/contacts_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/buttonMr"
+            android:background="@android:color/holo_blue_dark"
+            android:text="动画例子" />
+
+
+    </LinearLayout>
+</ScrollView>

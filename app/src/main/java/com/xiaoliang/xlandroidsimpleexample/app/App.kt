@@ -1,4 +1,4 @@
-package com.xiaoliang.xlandroidsimpleexample
+package com.xiaoliang.xlandroidsimpleexample.app
 
 import android.app.Application
 import android.content.Context
