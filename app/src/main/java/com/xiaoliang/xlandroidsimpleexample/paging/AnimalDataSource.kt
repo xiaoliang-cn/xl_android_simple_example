@@ -1,13 +1,8 @@
 package com.xiaoliang.xlandroidsimpleexample.paging
 
 import android.util.Log
-import androidx.paging.ItemKeyedDataSource
 import androidx.paging.PageKeyedDataSource
-import androidx.paging.toLiveData
-import com.xiaoliang.xlandroidsimpleexample.mContext
 import com.xiaoliang.xlandroidsimpleexample.room.Animal
-import com.xiaoliang.xlandroidsimpleexample.room.AppDatabase
-import com.xiaoliang.xlandroidsimpleexample.room.dao.AnimalDAO
 
 /*
 *项目名: XLAndroidSimpleExample

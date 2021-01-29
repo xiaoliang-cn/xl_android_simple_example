@@ -3,7 +3,8 @@ package com.xiaoliang.xlandroidsimpleexample.lifecycle
 import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.*
-import com.xiaoliang.xlandroidsimpleexample.mContext
+import com.xiaoliang.xlandroidsimpleexample.base.mContext
+
 
 /*
 *项目名: XLAndroidSimpleExample

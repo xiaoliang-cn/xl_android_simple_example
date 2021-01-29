@@ -1,15 +1,13 @@
 package com.xiaoliang.xlandroidsimpleexample.paging
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
 import androidx.paging.toLiveData
-import com.xiaoliang.xlandroidsimpleexample.mContext
+import com.xiaoliang.xlandroidsimpleexample.base.mContext
 import com.xiaoliang.xlandroidsimpleexample.room.Animal
 import com.xiaoliang.xlandroidsimpleexample.room.AppDatabase
-import org.koin.android.ext.android.inject
-import org.koin.experimental.property.inject
+
 
 
 /*

@@ -4,7 +4,6 @@ import com.xiaoliang.xlandroidsimpleexample.data.DataRepository
 import com.xiaoliang.xlandroidsimpleexample.databinding.DataBinDingViewModel
 import com.xiaoliang.xlandroidsimpleexample.datastore.UserPreferencesRepository
 import com.xiaoliang.xlandroidsimpleexample.lifecycle.LifecycleOwnerTest
-import com.xiaoliang.xlandroidsimpleexample.mContext
 import com.xiaoliang.xlandroidsimpleexample.navigation.NavigationViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module

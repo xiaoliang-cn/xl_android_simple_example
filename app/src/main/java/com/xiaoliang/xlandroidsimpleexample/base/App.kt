@@ -1,13 +1,10 @@
-package com.xiaoliang.xlandroidsimpleexample.app
+package com.xiaoliang.xlandroidsimpleexample.base
 
 import android.app.Application
 import android.content.Context
-import android.util.Log
 import androidx.lifecycle.*
 import com.xiaoliang.xlandroidsimpleexample.koin.appModule
 import com.xiaoliang.xlandroidsimpleexample.lifecycle.AppLifecycleOwner
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidFileProperties
 import org.koin.android.ext.koin.androidLogger

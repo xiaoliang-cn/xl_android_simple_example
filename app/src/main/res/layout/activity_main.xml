@@ -58,7 +58,7 @@
             android:text="pagingExample" />
 
         <Button
-            android:id="@+id/contacts_scroll"
+            android:id="@+id/animation_example"
             android:layout_width="match_parent"
             android:layout_height="@dimen/button_size"
             android:layout_margin="@dimen/buttonMr"

@@ -7,3 +7,6 @@
 #### 2:更新 android jetpack navigation使用的简单例子
 #### 3:更新了android jetpack databinding使用的简单例子
 #### 4:更新了 lifecycleOwner使用的简单例子
+#### 5:更新了 paging的使用简单例子（未完成）
+#### 6:更新了 更新了activityToNewActivity的过渡动画,类似flutter-hero效果
+

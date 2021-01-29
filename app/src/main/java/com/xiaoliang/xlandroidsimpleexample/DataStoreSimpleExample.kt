@@ -62,10 +62,10 @@ class DataStoreSimpleExample : AppCompatActivity() {
     }
 
     suspend fun updateInfo(comple: Boolean) {
-        DataPreferences.dataStore.updateData {
-            println("updateInfo" + it.showCompleted.toString())
-            it.toBuilder().setShowCompleted(!it.showCompleted).build()
-        }
+//        DataPreferences.dataStore.updateData {
+//            println("updateInfo" + it.showCompleted.toString())
+//            it.toBuilder().setShowCompleted(!it.showCompleted).build()
+//        }
         GlobalScope.launch {
             val user = DataPreferences.dataStore.data.first()
             runOnUiThread {

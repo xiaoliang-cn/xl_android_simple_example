@@ -3,6 +3,8 @@ package com.xiaoliang.xlandroidsimpleexample
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.xiaoliang.xlandroidsimpleexample.animation.AnimationListActivity
+import com.xiaoliang.xlandroidsimpleexample.animation.AnimationMainActivity
 import com.xiaoliang.xlandroidsimpleexample.databinding.DataBinDingActivity
 import com.xiaoliang.xlandroidsimpleexample.lifecycle.LifecycleOwnerActivity
 import com.xiaoliang.xlandroidsimpleexample.navigation.NavigationActivity
@@ -33,11 +35,12 @@ class MainActivity : AppCompatActivity() {
 
         //弹簧动画效果
         springAnimation()
+
     }
 
     private fun springAnimation() {
-        contacts_scroll.setOnClickListener {
-            val intent = Intent(this, SpringAnimationActivity::class.java)
+        animation_example.setOnClickListener {
+            val intent = Intent(this, AnimationListActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,6 +1,7 @@
 package com.xiaoliang.xlandroidsimpleexample
 
 import android.widget.Toast
+import com.xiaoliang.xlandroidsimpleexample.base.mContext
 
 /*
 *项目名: XLAndroidSimpleExample

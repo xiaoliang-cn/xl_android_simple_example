@@ -4,9 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".animation.AnimationMainActivity">
+    tools:context=".animation.AnimationListActivity">
 
-    <FrameLayout
+
+    <GridView
+        android:id="@+id/main_list_activity_grid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:columnWidth="100dp"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

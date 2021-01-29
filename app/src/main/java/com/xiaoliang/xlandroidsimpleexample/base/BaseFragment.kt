@@ -1,4 +1,4 @@
-package com.xiaoliang.xlandroidsimpleexample.app
+package com.xiaoliang.xlandroidsimpleexample.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -28,9 +28,11 @@ abstract class BaseFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initView()
+        initData()
     }
 
 
     abstract fun setLayoutId(): Int
     abstract fun initView()
+    abstract fun initData()
 }

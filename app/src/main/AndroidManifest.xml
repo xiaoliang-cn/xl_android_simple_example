@@ -5,14 +5,16 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".App"
+        android:name=".base.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name=".animation.AnimationMainActivity"></activity>
+        <activity android:name=".animation.AnimationListActivity"></activity>
+        <activity android:name=".animation.AnimationItemDetailsActivity" />
+        <activity android:name=".animation.AnimationMainActivity" />
         <activity android:name=".springanimation.SpringAnimationActivity" />
         <activity android:name=".paging.PagingSimpleExampleActivity" />
         <activity android:name=".lifecycle.LifecycleOwnerActivity" />

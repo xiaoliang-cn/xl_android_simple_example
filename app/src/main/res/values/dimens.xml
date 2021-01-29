@@ -23,4 +23,5 @@
     <dimen name="placeholder_item_height">32dp</dimen>
     <dimen name="error_text_size">24sp</dimen>
     <dimen name="button_size">85dp</dimen>
+    <dimen name="grid_spacing">10</dimen>
 </resources>

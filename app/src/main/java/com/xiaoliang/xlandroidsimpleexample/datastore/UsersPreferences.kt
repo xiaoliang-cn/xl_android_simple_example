@@ -6,8 +6,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.emptyPreferences
 import androidx.datastore.preferences.core.preferencesKey
 import androidx.datastore.preferences.createDataStore
-import com.xiaoliang.xlandroidsimpleexample.UserPreferences
-import com.xiaoliang.xlandroidsimpleexample.mContext
+import com.xiaoliang.xlandroidsimpleexample.base.mContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map

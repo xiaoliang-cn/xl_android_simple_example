@@ -7,7 +7,7 @@ import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import com.bumptech.glide.Glide
 import com.xiaoliang.xlandroidsimpleexample.R
-import com.xiaoliang.xlandroidsimpleexample.mContext
+import com.xiaoliang.xlandroidsimpleexample.base.mContext
 import com.xiaoliang.xlandroidsimpleexample.room.Animal
 
 
@@ -18,6 +18,7 @@ import com.xiaoliang.xlandroidsimpleexample.room.Animal
 *创建时间:2021/1/19 10:25 AM
 *描述: TODO
 */
+//
 val DIFF_CALLBACK =
     object : DiffUtil.ItemCallback<Animal>() {
         override fun areItemsTheSame(oldConcert: Animal, newConcert: Animal): Boolean {

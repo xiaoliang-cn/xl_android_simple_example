@@ -1,12 +1,9 @@
 package com.xiaoliang.xlandroidsimpleexample.datastore
 
-import android.content.Context
-import androidx.datastore.core.DataStore
-import androidx.datastore.core.DataStoreFactory
 import androidx.datastore.createDataStore
 import androidx.datastore.preferences.createDataStore
-import com.xiaoliang.xlandroidsimpleexample.mContext
-import java.util.prefs.Preferences
+import com.xiaoliang.xlandroidsimpleexample.base.mContext
+
 
 /*
 *项目名: XLAndroidSimpleExample

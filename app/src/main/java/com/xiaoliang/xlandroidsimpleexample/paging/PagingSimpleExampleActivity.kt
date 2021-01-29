@@ -21,7 +21,9 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class PagingSimpleExampleActivity : AppCompatActivity() {
 
     lateinit var pagingViewModel: PagingViewModel
+
     val adapter = PagingAdapter()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paging_simple_example)
